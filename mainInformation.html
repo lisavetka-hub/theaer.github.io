@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+<title>THEATER</title>
+<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<img src="img/LogoTheater.png" alt="logo">
+			</div>
+			<input type="checkbox" id="menu-checkbox">
+			<nav role="navigation">
+			<label for="menu-checkbox" class="toggle-button"
+			data-open="MENU" data-close="CLOSE" onclick></label>
+				<ul class="main-menu">
+					<li><a href="mainpage.html">ГЛАВНАЯ</a></li>
+					<li><a href="mainProf.html">ПРОФИЛЬ АКТЕРА</a></li>
+					<li><a href="mainInformation.html">ИНФОРМАЦИЯ</a></li>
+					<li><a href="mainGalery.html">ГАЛЛЕРЕЯ</a></li>
+					<!--<li><a href="mainKab.html">ЛИЧНЫЙ КАБИНЕТ</a></li>-->
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="top-slide">
+				<div class="top-container"></div>
+		</section>
+		
+		<section class="attention">
+			<div class="attention-container">
+				<h2>Информация о представлениях</h2>
+			</div>
+		</section>
+
+			<section class="event">
+			<div class="toggles">
+				<button id="showall">Все представления</button>
+				<button id="webdev">Апрель</button>
+				<button id="webdesing">Май</button>
+				<button id="graphd">Июнь</button>
+			</div>
+			<div class="posts">
+				<div class="post webdev"><img src="img/1-2.jpg" alt=""></div>
+				<div class="post webdesing"><img src="img/27.jpg" alt=""></div>
+				<div class="post graphd"><img src="img/74.jpg" alt=""></div>
+				<div class="post webdev"><img src="img/17653.jpg" alt=""></div>
+				<div class="post webdesing"><img src="img/mini1.1.jpg" alt=""></div>
+				<div class="post webdev"><img src="img/mini1.2.jpg" alt=""></div>
+				<div class="post webdesing"><img src="img/mini1.3.jpg" alt=""></div>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<div class="footer-container">
+			<div class="log-in"><!--блок для создания кнопки-->
+				
+				
+				
+					<div class="button js-button-campaign"><span>Вход / Регистрация</span></div>
+						<div class="overlay js-overlay-campaign">
+							<div class="popup js-popup-campaign">
+																			
+																			
+								<form id="form" action="avtorizazia.php" method="POST">
+									<div class="pole">
+										<label>Имя пользователя:</label>
+										<div class="input"><input type="text"  name="login" /></div>	<!--id="log"-->
+									</div>
+
+									<div class="pole">
+										<a href="#" id="zab">Забыли пароль?</a>
+									<label>Пароль:</label>
+										<div class="input"><input type="password" name="password"  /></div>    <!--id="pass"-->
+									</div>
+
+									<div class="sub">
+										<button type="submit">Войти</button>
+										<label id="otmetka"><input type="checkbox" /> Запомнить меня</label>
+									</div>
+								</form>
+								
+								
+								<div class="close-popup js-close-campaign"></div>
+							</div>
+						</div>
+			</div>
+			<div class="feedback">
+				<h4>Обратная связь</h4>
+				<p>http://kalmtaetr.ru/</p>
+				<img src="img/email.png" alt="">
+				<img src="img/rss.png" alt="">
+			</div>
+			<div class="contacts">
+				<h4>Контактная информация</h4>
+				<img src="img/Adress.png" alt=""><p>ул. Ленина, д. 201а, <br>
+												Элиста, Респ. Калмыкия </p>
+				<img src="img/Phone.png" alt=""><p>89938409075<br>
+												+7 (961) 652-95-04 </p>
+			</div>
+		</div>
+	</footer>
+	
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!--.post-infa {
+	position: relative;   
+    width: 190px;
+    height: 269px;
+    margin: 50px auto;
+}
+.post-infa:hover .block{
+    display: block;
+	opacity: .75;
+}-->

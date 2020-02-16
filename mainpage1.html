@@ -1,0 +1,219 @@
+<?php 
+	require "database.php";
+?>
+<html lang="en"><!-- Чтобы указать язык, на котором написан текст внутри текущего элемента
+				и применяется атрибут lang. Браузер использует его значение для правильного 
+				отображения некоторых символов.-->
+<head> <!-- Этот раздел предназначен для заголовка страницы и технической информации. 
+		предназначен для хранения других элементов-->
+ <meta charset="UTF-8"><!--указание кодировки -->
+<title>THEATER</title><!--Определяет заголовок документа-->
+<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"><!--подключение шрифтов -->
+<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"><!--подключение библиотек для галлереи -->
+<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css"><!--подключение библиотек-->
+<link rel="stylesheet" href="style2.css"><!--подключение стилей -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body><!--хранения содержания веб-страницы-->
+
+	<header><!-- задает «шапку» сайта или раздела-->
+		<div class="header-container"><!--блок для меню-->
+			<div class="logo"><!--блок для лого-->
+				<img src="img/LogoTheater.png" alt="logo"><!--картинка логотипа-->
+			</div>
+			
+			<input type="checkbox" id="menu-checkbox"><!--создание чекбокса-->
+			<nav role="navigation"><!--задает навигацию по сайту-->
+			<!--устанавливает связь между определенной меткой.
+			for-Идентификатор элемента, с которым следует установить связь.-->
+			<label for="menu-checkbox" class="toggle-button"
+			data-open="MENU" data-close="CLOSE" onclick></label><!--создание выпадающего списка для адаптации для меньшего экрана-->
+				<ul class="main-menu"><!--маркированный список. -->
+					<li><a href="mainpage.html">ГЛАВНАЯ</a></li><!--определяет отдельный элемент списка-->
+					<li><a href="mainProf.html">ПРОФИЛЬ АКТЕРА</a></li><!--определяет отдельный элемент списка-->
+					<li><a href="mainInformation.html">ИНФОРМАЦИЯ</a></li><!--определяет отдельный элемент списка-->
+					<li><a href="mainGalery.html">ГАЛЛЕРЕЯ</a></li><!--определяет отдельный элемент списка-->
+				<!--<li><a href="mainKab.html">ЛИЧНЫЙ КАБИНЕТ</a></li>-->
+				</ul>
+			</nav>
+		</div>
+		
+	</header>
+
+	<main><!--предназначен для основного содержимого документа-->
+		<section class="top-slide"><!--Задаёт раздел документа-->
+				<div class="top-container">	</div><!-- предназначен для выделения фрагмента документа с целью изменения вида содержимого-->
+		</section>
+		
+		<section class="attention"><!--секция заголовка-->
+			<div class="attention-container"><!--блок для заголовка-->
+				<h2>Уважаемые зрители! Анонс!!! </h2><!--заголовок второго уровня-->
+			</div>
+		</section>
+		
+		<section class="all-texts"><!--секция с текстом-->
+			<div id="text1"><p>23 и 30 НОЯБРЯ в 18-00 на сцене Национального драматического театра им. Б. Басангова - ремикс мюзикла "Стая". Первая <br>
+								постановка была осуществлена на сцене ТЮЗа в 2001 году. Целое поколение молодых людей выросла на этом спектакле, <br>
+								сегодня они перешли в другую возрастную категорию - стали родителями. Времена тоже изменились, но подростковые <br>
+								проблемы остаются прежними... </p></div>
+								<!--<p> является блочным элементом, всегда начинается с новой строки,
+								абзацы текста идущие друг за другом разделяются между собой отбивкой .-->
+			<div id="text2"><p>24 НОЯБРЯ в 18-00 на сцене Национального драматического театра им. Б. Басангова состоится комедия «ЯҺСН МЕКТӘ!»<br>
+								(«Ай да хитрый!»). Спектакль поставлен режиссером Сергеем Бурлаченко по пьесе Туфана Минуллина<br>
+								«Старик из деревни Альдермеш». </p></div>
+		</section>
+		
+		<section class="specialize"><!--секция с афишей-->
+			<div class="specialize-container"><!--блок с афишей-->
+				<div class="specialize-poster"><!--блок для афиши-->
+				
+					<div class="card"><!--блок для позиционирования картинки-->
+							<img src="img/1.1.jpg" alt=""><!--ссылка на картинку-->
+							<div class="block"><!--блок с текстом-->
+									<p><b>"Письма Вертинского"<br><!--текст-->
+									Примьера 16 и 28 мая в 19.00</b><br>
+									<br>
+									Воспоминания и письма Вертинского обращают нас к страницам истории – 
+									русская интеллигенция в дореволюционное время, в период революции и 
+									последующей эмиграции. Щемящая лирика и гротеск, клоунада и стихи периода 
+									декаданса соединяются в эпизоды жизни разных слоев общества в один из самых 
+									неоднозначных периодов русской истории.</p>
+							</div>
+					</div>
+					<div class="card"><!--блок для позиционирования картинки-->
+							<img src="img/1.2.jpg" alt=""><!--ссылка на картинку-->
+							<div class="block"><!--блок с текстом-->
+									<p><b>"Лекарь поневоле"<br><!--текст-->
+									Примьера 13 и 20 мая в 20.30</b><br>
+									<br>
+									Главный герой — некто Сганарель. Со Сганарелем произошёл курьёз, 
+									а именно: Сганареля принимают за известного врача, который, 
+									как говорят слухи, «творит чудеса».
+									<br>
+									Сганарель успешно справляется со своим новым амплуа, 
+									а кроме того он делает и добрые дела — помогает влюблённой паре 
+									воссоединиться. Не забывает новый врач и о хлебе насущном — простодушные 
+									пациенты щедро ему платят, и теперь его кошелёк не то чтобы звенит, 
+									а дополна набит золотыми монетами</p>
+							</div>
+					</div>
+					<div class="card"><!--блок для позиционирования картинки-->
+						<img src="img/1.3.jpg" alt=""><!--ссылка на картинку-->
+							<div class="block"><!--блок с текстом-->
+									<p><b>"Добрый человек из Сезуана"<br><!--текст-->
+									Примьера 10 и 25 мая в 15.00</b><br>
+									<br>
+									Пьеса Бертольта Брехта «Добрый человек из Сезуана», 
+									давно ставшая культовой для театрального мира и заново переведенная для 
+									нашего театра Егором Перегудовым, вновь обрела острое актуальное звучание 
+									в постановке одного из самых ярких современных режиссеров – Юрия Бутусова. 
+									Это история о проститутке Шен Те, неожиданно обласканной богами. 
+									Но, чем больше добра делала Шен Те, тем больше бед сыпалось на ее голову.</p>
+							</div>
+					</div>
+					
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer><!-- задает «подвал» сайта или раздела-->
+		<div class="footer-container"><!--блок для подвала-->
+			<div class="log-in"><!--блок для создания кнопки-->
+			
+				
+				
+					<div class="button js-button-campaign"><span>Вход / Регистрация</span></div><!--кнопка Настройки-->
+						<div class="overlay js-overlay-campaign"><!--класс для создания затемнения про открытии окна-->
+							<div class="popup js-popup-campaign"><!--класс для зодания pop-up окна-->
+								
+				<?php if (isset($_SESSION['logged_user'])) : ?>
+				автаризован<br>
+				привет,<?php echo $_SESSION['logged_user']->login; ?>
+				<hr>
+				<a href="logout.php">выйти</a>
+				<?php else : ?>								
+																			
+							<!--	<form id="form" action="avtorizazia.php" method="POST">
+						
+									<div class="pole">
+										<label>Имя пользователя:</label>
+										<div class="input"><input type="text"  name="login" /></div>	
+									</div>
+
+									<div class="pole">
+										<a href="#" id="zab">Забыли пароль?</a>
+									<label>Пароль:</label>
+										<div class="input"><input type="password" name="password"  /></div>   
+									</div>
+
+									<div class="sub">
+										<button type="submit">Войти</button>
+										<label id="otmetka"><input type="checkbox" /> Запомнить меня</label>
+									</div>
+									
+									</form>-->
+									
+						
+							<form action="login.php" method="POST">
+							
+							<div class="pole">
+										<label>Имя пользователя:</label>
+										<div class="input"><input type="text" name="login" value="<?php echo @$data['login']; ?>"></div>	
+									</div>
+
+									<div class="pole">
+										<a href="#" id="zab">Забыли пароль?</a>
+									<label>Пароль:</label>
+										<div class="input"><input type="password" name="password" value="<?php echo @$data['password']; ?>"></div>   
+									</div>
+
+									<div class="sub">
+										<button type="submit" name="do_login">войти</button>
+										<label id="otmetka"><input type="checkbox" /> Запомнить меня</label>
+							</div>
+
+
+							</form>
+
+									
+					<?php endif; ?>		
+
+								
+								
+								<div class="close-popup js-close-campaign"></div>
+							</div>
+						</div>
+			</div>
+			
+			
+			
+			<div class="feedback"><!--блок для информации об обратной связи-->
+				<h4>Обратная связь</h4><!--заголовок четвертого уровня-->
+				<p>http://kalmtaetr.ru/</p><!--ссылка на сайт-->
+				<img src="img/email.png" alt=""><!--иконка соц сети-->
+				<img src="img/rss.png" alt=""><!--иконка соц сети-->				
+			</div>
+			<div class="contacts"><!--блок для информации об адресах -->
+				<h4>Контактная информация</h4><!--заголовок четвертого уровня-->
+				<img src="img/Adress.png" alt=""><p>ул. Ленина, д. 201а, <br>
+												Элиста, Респ. Калмыкия </p>
+				<img src="img/Phone.png" alt=""><p>89938409075<br>
+												+7 (961) 652-95-04 </p>
+			</div>
+		</div>
+	</footer>
+	
+<script 
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"><!--подключение библеотеки -->
+</script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+</body>
+</html>
+
+
